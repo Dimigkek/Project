@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #82bd91;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  color: #333;
+  background-color: #82bd91;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.green {
+  background-color: #5cb85c;
+  color: #fff;
+}
