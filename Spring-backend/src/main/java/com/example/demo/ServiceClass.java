@@ -5,11 +5,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ServiceClass {
-  private List<Employee> employees = new ArrayList<>();
-
-  public List<Employee> getAllEmployees() {
-    return employees;
-  }
 
   public Employee getEmployeeById(Long id) {
     return employees.stream().filter(employee -> employee.getId().equals(id)).findFirst().orElse(null);
