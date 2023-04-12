@@ -6,10 +6,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class ServiceClass {
 
-  public Employee getEmployeeById(Long id) {
-    return employees.stream().filter(employee -> employee.getId().equals(id)).findFirst().orElse(null);
-  }
-
   public Employee updateEmployee(Long id, Employee employeeDetails) {
     Employee employee = getEmployeeById(id);
     if (employee != null) {
